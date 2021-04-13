@@ -7,7 +7,7 @@ class CursorPositionWidget extends StatefulWidget {
   final Widget child;
 
   static Offset of(BuildContext context) {
-    return Provider.of<_CursorPositionWidgetState>(context).currentPosition;
+    return Provider.of<_CursorPositionWidgetState>(context, listen: false).currentPosition;
   }
 
   @override
